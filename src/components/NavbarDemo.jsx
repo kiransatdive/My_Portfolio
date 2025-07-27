@@ -20,7 +20,7 @@ export function NavbarDemo() {
   const navItems = [
    
     { name: "Home", path: "/home" },
-    { name: "Projects", path: "/projects" },
+    { name: "Projects", path: "/projectspage" },
     { name: "Blog", path: "/blog" },
     // { name: "TimelineDemo", path: "/timelineDemo" },
     { name: "Contact", path: "/contact" },
@@ -68,7 +68,7 @@ export function NavbarDemo() {
                 key={`mobile-link-${idx}`}
                 to={item.path}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="relative text-neutral-600 dark:text-neutral-300 block py-2"
+                className="relative text-neutral-600 dark:text-neutral-300 block py-2 "
               >
                 {item.name}
               </Link>

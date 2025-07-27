@@ -8,6 +8,7 @@ import Contact from "./pages/Contact";
 import Changelog from "./pages/Changelog";
 import Footer from "./components/Footer";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import ProjectsPage from "./components/ProjectsPage";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -43,12 +44,12 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/projects",
+    path: "/projectspage",
     element: (
       <div>
         <NavbarDemo />
         <Layout>
-          <Projects />
+          <ProjectsPage />
           
         </Layout>
       </div>

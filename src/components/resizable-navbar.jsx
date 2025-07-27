@@ -150,7 +150,7 @@ export const MobileNavHeader = ({
 }) => {
   return (
     <div
-      className={cn("flex w-full flex-row items-center justify-between", className)}>
+      className={cn("flex w-full flex-row items-center justify-between cursor-pointer", className)}>
       {children}
     </div>
   );

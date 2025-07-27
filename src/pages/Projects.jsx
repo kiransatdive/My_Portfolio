@@ -1,7 +1,7 @@
 import React from "react";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
-import Blog from "./Blog";
+import { Link } from "react-router-dom";
 
 const projects = [
   {
@@ -9,7 +9,14 @@ const projects = [
     description:
       "Developed a secure Employee Management System with role-based access and CRUD operations.",
     tech: [
-      "Java", "Hibernate", "Springboot", "Angular", "TailwindCSS", "Typescript", "SQL", "JWT"
+      "Java",
+      "Hibernate",
+      "Springboot",
+      "Angular",
+      "TailwindCSS",
+      "Typescript",
+      "SQL",
+      "JWT",
     ],
     icon: "/public/employee.jpg",
   },
@@ -18,7 +25,14 @@ const projects = [
     description:
       "Built a scalable backend for real-time attendance tracking using Java, Spring Boot, and Hibernate.",
     tech: [
-      "Java", "Hibernate", "Springboot", "Angular", "TailwindCSS", "Typescript", "SQL", "JWT"
+      "Java",
+      "Hibernate",
+      "Springboot",
+      "Angular",
+      "TailwindCSS",
+      "Typescript",
+      "SQL",
+      "JWT",
     ],
     icon: "/public/attendence.png",
   },
@@ -30,13 +44,21 @@ const upcommingprojects = [
     description:
       "Build Smarter Sites with AI Agents. Turn visitors into customers with real-time automated assistance.",
     tech: [
-      "Html", "Javascript", "FarmerMotion", "React", "TailwindCSS", "AI Agent", "n8n", "Open AI"
+      "Html",
+      "Javascript",
+      "FarmerMotion",
+      "React",
+      "TailwindCSS",
+      "AI Agent",
+      "n8n",
+      "Open AI",
     ],
     icon: "/public/ai.jpg",
   },
   {
     title: "More Projects Coming Soon...",
-    description: "I get ideas all day 🙄. All of them are updated here as soon as I start working on them.",
+    description:
+      "I get ideas all day 🙄. All of them are updated here as soon as I start working on them.",
     tech: [],
     icon: "/public/chat.png",
   },
@@ -80,6 +102,19 @@ const Projects = () => {
             </motion.div>
           ))}
         </div>
+      </div>
+      <div className="text-center mt-10">
+        <Link
+          to="/projectspage"
+          className="text-base justify-center font-semibold text-gray-700 hover:text-black transition-all flex items-center gap-2 mx-auto cursor-pointer"
+        >
+          See All Projects
+          <img
+            src="/arrow.png"
+            alt="Arrow"
+            className="w-4 h-4 transform rotate-90"
+          />
+        </Link>
       </div>
 
       <div className="max-w-5xl px-6 py-6 mx-auto bg-white">
