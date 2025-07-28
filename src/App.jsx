@@ -9,6 +9,7 @@ import Changelog from "./pages/Changelog";
 import Footer from "./components/Footer";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ProjectsPage from "./components/ProjectsPage";
+import BlogPage from "./components/BlogPage";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -17,12 +18,11 @@ const router = createBrowserRouter([
         <NavbarDemo />
         <Layout>
           <Home />
-           <Projects />
+          <Projects />
           <Blog />
           <Changelog />
           <Contact />
           <Footer />
-         
         </Layout>
       </div>
     ),
@@ -50,18 +50,17 @@ const router = createBrowserRouter([
         <NavbarDemo />
         <Layout>
           <ProjectsPage />
-          
         </Layout>
       </div>
     ),
   },
   {
-    path: "/blog",
+    path: "/blogpage",
     element: (
       <div>
         <NavbarDemo />
         <Layout>
-          <Blog />
+          <BlogPage />
         </Layout>
       </div>
     ),

@@ -21,7 +21,7 @@ export function NavbarDemo() {
    
     { name: "Home", path: "/home" },
     { name: "Projects", path: "/projectspage" },
-    { name: "Blog", path: "/blog" },
+    { name: "Blog", path: "/blogpage" },
     // { name: "TimelineDemo", path: "/timelineDemo" },
     { name: "Contact", path: "/contact" },
   ];
@@ -30,7 +30,7 @@ export function NavbarDemo() {
 
   return (
     <>
-    <div className="fixed top-10 left-0 right-0 z-50 bg-white dark:bg-black   ">
+    <div className="fixed top-0 py-10 left-0 right-0 z-50 backdrop-blur-sm dark:bg-black   ">
       <Navbar>
         {/* Desktop Navigation */}
         <NavBody>

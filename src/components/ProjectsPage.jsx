@@ -70,7 +70,7 @@ const upcomingProjects = [
 export default function Projects() {
   return (
     <>
-      <section className="bg-white text-black max-w-5xl mx-auto px-6 py-12">
+      <section className="bg-white text-black max-w-5xl mx-auto px-6 py-18">
         {/* Header */}
         <h1 className="text-4xl font-bold mb-6">Projects</h1>
         <p className="text-gray-700 text-lg font-medium leading-relaxed mb-6">
