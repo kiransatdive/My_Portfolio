@@ -18,7 +18,7 @@ const projects = [
       "SQL",
       "JWT",
     ],
-    icon: "/public/employee.jpg",
+    icon: "/employee.jpg",
   },
   {
     title: "SAMSTRACK",
@@ -34,7 +34,7 @@ const projects = [
       "SQL",
       "JWT",
     ],
-    icon: "/public/attendence.png",
+    icon: "/attendence.png",
   },
 ];
 
@@ -53,14 +53,14 @@ const upcommingprojects = [
       "n8n",
       "Open AI",
     ],
-    icon: "/public/ai.jpg",
+    icon: "/ai.jpg",
   },
   {
     title: "More Projects Coming Soon...",
     description:
       "I get ideas all day 🙄. All of them are updated here as soon as I start working on them.",
     tech: [],
-    icon: "/public/chat.png",
+    icon: "/chat.png",
   },
 ];
 
