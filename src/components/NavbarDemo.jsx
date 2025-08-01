@@ -23,7 +23,7 @@ export function NavbarDemo() {
     { name: "Projects", path: "/projectspage" },
     { name: "Blog", path: "/blogpage" },
     // { name: "TimelineDemo", path: "/timelineDemo" },
-    { name: "Contact", path: "/contact" },
+    { name: "Contact", path: "/contactpage" },
   ];
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);

@@ -10,6 +10,9 @@ import Footer from "./components/Footer";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ProjectsPage from "./components/ProjectsPage";
 import BlogPage from "./components/BlogPage";
+import ContactPage from "./components/ContactPage";
+
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -50,6 +53,8 @@ const router = createBrowserRouter([
         <NavbarDemo />
         <Layout>
           <ProjectsPage />
+          <Contact />
+          <Footer />
         </Layout>
       </div>
     ),
@@ -61,17 +66,19 @@ const router = createBrowserRouter([
         <NavbarDemo />
         <Layout>
           <BlogPage />
+          <Footer />
         </Layout>
       </div>
     ),
   },
   {
-    path: "/contact",
+    path: "/contactpage",
     element: (
       <div>
         <NavbarDemo />
         <Layout>
-          <Contact />
+          <ContactPage />
+          <Footer />
         </Layout>
       </div>
     ),

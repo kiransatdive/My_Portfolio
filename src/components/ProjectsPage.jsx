@@ -1,9 +1,7 @@
 // Projects.jsx
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
-import React from "react";
-import Contact from "../pages/Contact";
-import Footer from "./Footer";
+
 import { FaGithub } from "react-icons/fa";
 
 const projects = [
@@ -84,7 +82,7 @@ export default function Projects() {
 
         {/* Full Stack Projects */}
         <h2 className="text-4xl font-bold mt-10 mb-6">Full-Stack</h2>
-        <div className="grid sm:grid-cols-2 gap-6 cursor-pointer">
+        <div className="grid sm:grid-cols-2 gap-6 cursor-pointer ">
           {projects.map((project, idx) => (
             <motion.div
               key={idx}
@@ -168,8 +166,7 @@ export default function Projects() {
       </section>
 
       {/* Contact & Footer */}
-      <Contact />
-      <Footer />
+     
     </>
   );
 }
